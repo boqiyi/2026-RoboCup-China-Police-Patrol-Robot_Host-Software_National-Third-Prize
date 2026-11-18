@@ -1,0 +1,168 @@
+{
+  "entries": [
+    {
+      "audio": "clue_suspect_01.wav",
+      "business_index": 1,
+      "category": "SUSPECT",
+      "model_class_name": "1",
+      "text": "侦查到1号嫌疑人"
+    },
+    {
+      "audio": "clue_suspect_02.wav",
+      "business_index": 2,
+      "category": "SUSPECT",
+      "model_class_name": "2",
+      "text": "侦查到2号嫌疑人"
+    },
+    {
+      "audio": "clue_suspect_03.wav",
+      "business_index": 3,
+      "category": "SUSPECT",
+      "model_class_name": "3",
+      "text": "侦查到3号嫌疑人"
+    },
+    {
+      "audio": "clue_suspect_04.wav",
+      "business_index": 4,
+      "category": "SUSPECT",
+      "model_class_name": "4",
+      "text": "侦查到4号嫌疑人"
+    },
+    {
+      "audio": "clue_suspect_05.wav",
+      "business_index": 5,
+      "category": "SUSPECT",
+      "model_class_name": "5",
+      "text": "侦查到5号嫌疑人"
+    },
+    {
+      "audio": "clue_suspect_06.wav",
+      "business_index": 6,
+      "category": "SUSPECT",
+      "model_class_name": "6",
+      "text": "侦查到6号嫌疑人"
+    },
+    {
+      "audio": "clue_suspect_07.wav",
+      "business_index": 7,
+      "category": "SUSPECT",
+      "model_class_name": "7",
+      "text": "侦查到7号嫌疑人"
+    },
+    {
+      "audio": "clue_suspect_08.wav",
+      "business_index": 8,
+      "category": "SUSPECT",
+      "model_class_name": "8",
+      "text": "侦查到8号嫌疑人"
+    },
+    {
+      "audio": "clue_suspect_09.wav",
+      "business_index": 9,
+      "category": "SUSPECT",
+      "model_class_name": "9",
+      "text": "侦查到9号嫌疑人"
+    },
+    {
+      "audio": "clue_suspect_10.wav",
+      "business_index": 10,
+      "category": "SUSPECT",
+      "model_class_name": "10",
+      "text": "侦查到10号嫌疑人"
+    },
+    {
+      "audio": "clue_knife_01.wav",
+      "business_index": 1,
+      "category": "KNIFE",
+      "model_class_name": "11",
+      "text": "侦查到1号刀具"
+    },
+    {
+      "audio": "clue_knife_02.wav",
+      "business_index": 2,
+      "category": "KNIFE",
+      "model_class_name": "12",
+      "text": "侦查到2号刀具"
+    },
+    {
+      "audio": "clue_knife_03.wav",
+      "business_index": 3,
+      "category": "KNIFE",
+      "model_class_name": "13",
+      "text": "侦查到3号刀具"
+    },
+    {
+      "audio": "clue_knife_04.wav",
+      "business_index": 4,
+      "category": "KNIFE",
+      "model_class_name": "14",
+      "text": "侦查到4号刀具"
+    },
+    {
+      "audio": "clue_knife_05.wav",
+      "business_index": 5,
+      "category": "KNIFE",
+      "model_class_name": "15",
+      "text": "侦查到5号刀具"
+    },
+    {
+      "audio": "clue_knife_06.wav",
+      "business_index": 6,
+      "category": "KNIFE",
+      "model_class_name": "16",
+      "text": "侦查到6号刀具"
+    },
+    {
+      "audio": "clue_knife_07.wav",
+      "business_index": 7,
+      "category": "KNIFE",
+      "model_class_name": "17",
+      "text": "侦查到7号刀具"
+    },
+    {
+      "audio": "clue_knife_08.wav",
+      "business_index": 8,
+      "category": "KNIFE",
+      "model_class_name": "18",
+      "text": "侦查到8号刀具"
+    },
+    {
+      "audio": "clue_knife_09.wav",
+      "business_index": 9,
+      "category": "KNIFE",
+      "model_class_name": "19",
+      "text": "侦查到9号刀具"
+    },
+    {
+      "audio": "clue_knife_10.wav",
+      "business_index": 10,
+      "category": "KNIFE",
+      "model_class_name": "20",
+      "text": "侦查到10号刀具"
+    }
+  ],
+  "model_class_order": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20"
+  ],
+  "schema_version": 1,
+  "status": "READY"
+}

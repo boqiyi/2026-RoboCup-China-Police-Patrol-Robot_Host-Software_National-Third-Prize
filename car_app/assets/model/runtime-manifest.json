@@ -1,0 +1,146 @@
+{
+  "class_names": [
+    "1",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "2",
+    "20",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "input": {
+    "format": "NV12",
+    "height": 640,
+    "interpolation": "OPENCV_DEFAULT_LINEAR",
+    "letterbox_value": 127,
+    "nv12_conversion": "OPENCV_BGR2YUV_I420_INTERLEAVED_UV",
+    "resize_mode": "D_ROBOTICS_LETTERBOX_V1",
+    "scale_up": true,
+    "source_color": "BGR",
+    "tensor_dtype": "uint8",
+    "tensor_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "width": 640
+  },
+  "input_name": "images",
+  "model_name": "last_1_6_bayese_640x640_nv12",
+  "output_names": [
+    "output0",
+    "326",
+    "334",
+    "342",
+    "350",
+    "358"
+  ],
+  "outputs": [
+    {
+      "layout": "NHWC",
+      "name": "output0",
+      "role": "CLASS_LOGITS",
+      "stride": 8,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        80,
+        80,
+        20
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "326",
+      "role": "DFL_BOX_LOGITS",
+      "stride": 8,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        80,
+        80,
+        64
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "334",
+      "role": "CLASS_LOGITS",
+      "stride": 16,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        40,
+        40,
+        20
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "342",
+      "role": "DFL_BOX_LOGITS",
+      "stride": 16,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        40,
+        40,
+        64
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "350",
+      "role": "CLASS_LOGITS",
+      "stride": 32,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "358",
+      "role": "DFL_BOX_LOGITS",
+      "stride": 32,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        20,
+        20,
+        64
+      ]
+    }
+  ],
+  "postprocess": {
+    "confidence_threshold": 0.5,
+    "decoder": "D_ROBOTICS_YOLOV8_DFL_CPU_NMS_V1",
+    "iou_threshold": 0.5,
+    "max_detections": 300,
+    "reg_bins": 16,
+    "strides": [
+      8,
+      16,
+      32
+    ]
+  },
+  "runtime": "hbm_runtime.HB_HBMRuntime",
+  "schema_version": 2
+}

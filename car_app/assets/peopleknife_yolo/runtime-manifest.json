@@ -1,0 +1,185 @@
+{
+  "class_names": [
+    "1",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "2",
+    "20",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "input": {
+    "format": "NV12",
+    "height": 640,
+    "interpolation": "OPENCV_DEFAULT_LINEAR",
+    "letterbox_value": 127,
+    "nv12_conversion": "OPENCV_BGR2YUV_I420_INTERLEAVED_UV",
+    "resize_mode": "D_ROBOTICS_LETTERBOX_V1",
+    "scale_up": true,
+    "source_color": "BGR",
+    "tensor_dtype": "uint8",
+    "tensor_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "width": 640
+  },
+  "input_name": "images",
+  "model_name": "peopleknife_bayese_640x640_nv12",
+  "output_names": [
+    "cls_s8",
+    "box_s8",
+    "cls_s16",
+    "box_s16",
+    "cls_s32",
+    "box_s32"
+  ],
+  "outputs": [
+    {
+      "layout": "NHWC",
+      "name": "cls_s8",
+      "role": "CLASS_LOGITS",
+      "stride": 8,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        80,
+        80,
+        20
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "box_s8",
+      "role": "DFL_BOX_LOGITS",
+      "stride": 8,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        80,
+        80,
+        64
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "cls_s16",
+      "role": "CLASS_LOGITS",
+      "stride": 16,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        40,
+        40,
+        20
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "box_s16",
+      "role": "DFL_BOX_LOGITS",
+      "stride": 16,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        40,
+        40,
+        64
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "cls_s32",
+      "role": "CLASS_LOGITS",
+      "stride": 32,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "box_s32",
+      "role": "DFL_BOX_LOGITS",
+      "stride": 32,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        20,
+        20,
+        64
+      ]
+    }
+  ],
+  "postprocess": {
+    "confidence_threshold": 0.8,
+    "decoder": "D_ROBOTICS_YOLOV8_DFL_CPU_NMS_V1",
+    "iou_threshold": 0.5,
+    "max_detections": 300,
+    "reg_bins": 16,
+    "strides": [
+      8,
+      16,
+      32
+    ]
+  },
+  "runtime": "hbm_runtime.HB_HBMRuntime",
+  "schema_version": 2,
+  "provenance": {
+    "source_checkpoint_sha256": "4c41d52996a011dffbd7ae17b7b94da53abf3344e165be93d777d3f8fb3bde2e",
+    "onnx_sha256": "19c20e8675581fb19e4c9712382ee71693c988391e963e3bb06cf17a8e3539b8",
+    "original_class_names": {
+      "0": "1",
+      "1": "10",
+      "2": "11",
+      "3": "12",
+      "4": "13",
+      "5": "14",
+      "6": "15",
+      "7": "16",
+      "8": "17",
+      "9": "18",
+      "10": "19",
+      "11": "2",
+      "12": "20",
+      "13": "3",
+      "14": "4",
+      "15": "5",
+      "16": "6",
+      "17": "7",
+      "18": "8",
+      "19": "9"
+    },
+    "model_sha256": "dfb3813ef4fe93f2b03a16d63560a009b36b43e0e172aef6b853e96762903920",
+    "march": "bayes-e",
+    "docker_image": "registry.d-robotics.cc/deliver/ai_toolchain_ubuntu_20_x5_cpu:v1.2.8",
+    "docker_image_id": "sha256:e1957f66891442f9598e9c894962ff7614e2961ff4fee9e043ed0de28a4862e8",
+    "hb_mapper_version": "1.24.3",
+    "hbdk_version": "3.49.15",
+    "torch_version": "2.13.0+cpu",
+    "ultralytics_version": "8.4.117",
+    "onnx_version": "1.22.0",
+    "calibration_images": 168,
+    "validation_images": 48,
+    "comparison_scope": "Same recording, temporally separated conversion comparison; no independent accuracy or mAP claim",
+    "confidence_threshold": 0.8
+  }
+}

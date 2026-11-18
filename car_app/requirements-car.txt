@@ -1,0 +1,9 @@
+# car_app 运行依赖（RDK 检测已确认这些已装好，无需再装）
+# 地平线板卡自带，不在 pip 源：
+#   hobot_dnn 3.0.9
+#   hobot_vio 3.0.9
+#   Hobot.GPIO 0.0.2
+# pip 可装（如缺失再执行）：
+numpy>=1.26
+opencv-python>=4.11
+pyserial>=3.5

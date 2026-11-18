@@ -1,0 +1,142 @@
+{
+  "class_names": [
+    "0",
+    "1",
+    "2"
+  ],
+  "input": {
+    "format": "NV12",
+    "height": 640,
+    "interpolation": "OPENCV_DEFAULT_LINEAR",
+    "letterbox_value": 127,
+    "nv12_conversion": "OPENCV_BGR2YUV_I420_INTERLEAVED_UV",
+    "resize_mode": "D_ROBOTICS_LETTERBOX_V1",
+    "scale_up": true,
+    "source_color": "BGR",
+    "tensor_dtype": "uint8",
+    "tensor_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "width": 640
+  },
+  "input_name": "images",
+  "model_name": "obstacle_bayese_640x640_nv12",
+  "output_names": [
+    "cls_s8",
+    "box_s8",
+    "cls_s16",
+    "box_s16",
+    "cls_s32",
+    "box_s32"
+  ],
+  "outputs": [
+    {
+      "layout": "NHWC",
+      "name": "cls_s8",
+      "role": "CLASS_LOGITS",
+      "stride": 8,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        80,
+        80,
+        3
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "box_s8",
+      "role": "DFL_BOX_LOGITS",
+      "stride": 8,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        80,
+        80,
+        64
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "cls_s16",
+      "role": "CLASS_LOGITS",
+      "stride": 16,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        40,
+        40,
+        3
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "box_s16",
+      "role": "DFL_BOX_LOGITS",
+      "stride": 16,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        40,
+        40,
+        64
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "cls_s32",
+      "role": "CLASS_LOGITS",
+      "stride": 32,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        20,
+        20,
+        3
+      ]
+    },
+    {
+      "layout": "NHWC",
+      "name": "box_s32",
+      "role": "DFL_BOX_LOGITS",
+      "stride": 32,
+      "tensor_dtype": "float32",
+      "tensor_shape": [
+        1,
+        20,
+        20,
+        64
+      ]
+    }
+  ],
+  "postprocess": {
+    "confidence_threshold": 0.6,
+    "decoder": "D_ROBOTICS_YOLOV8_DFL_CPU_NMS_V1",
+    "iou_threshold": 0.5,
+    "max_detections": 300,
+    "reg_bins": 16,
+    "strides": [
+      8,
+      16,
+      32
+    ]
+  },
+  "runtime": "hbm_runtime.HB_HBMRuntime",
+  "schema_version": 2,
+  "provenance": {
+    "source_checkpoint_sha256": "8be1de2dea71698456dfb807ffb51ea16eedbd00f36e400a8f04caa79ed7123c",
+    "onnx_sha256": "23371a04ce0b10e264f1d9f053f62bd729f005dfdbf841775c628cd31b936a34",
+    "original_class_names": {
+      "0": "a",
+      "1": "b",
+      "2": "c"
+    },
+    "model_sha256": "a66efaaaf7b53c38b62a7f63d0d16a236d339a610cc62cf9cabb8116993a62c9",
+    "march": "bayes-e",
+    "hb_mapper_version": "1.24.3",
+    "source_checkpoint_path": "best(6).pt"
+  }
+}

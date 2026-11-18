@@ -1,0 +1,443 @@
+{
+  "version": 2,
+  "calibration": {
+    "status": "frozen",
+    "calibrated_date": "2026-10-13",
+    "image_count": 490,
+    "near_count": 280,
+    "far_count": 210,
+    "statistic_source": "all hash-checked originals; A=max(blue_red union, orange-yellow, wood-brown); source labels group reports only",
+    "area_denominator": "full original width * height",
+    "interval_rule": "near/far=min(old lower envelope, original Amin*0.90)..max(old upper envelope, original Amax*1.10); combined=far Amin..near Amax in central full-height ROI",
+    "margin": {
+      "near_far_relative_lower": 0.9,
+      "near_far_relative_upper": 1.1,
+      "combined_extra_margin": 0
+    },
+    "baseline_seed_envelopes": {
+      "near": [
+        0.16045833333333334,
+        0.2632109375
+      ],
+      "far": [
+        0.022964843750000002,
+        0.09214648437499999
+      ],
+      "combined": [
+        0.028326822916666668,
+        0.3338671875
+      ]
+    },
+    "statistics": {
+      "near": {
+        "near": {
+          "count": 280,
+          "min": 0.19185546875,
+          "max": 0.2643131510416667,
+          "median": 0.21510904947916668
+        },
+        "far": {
+          "count": 210,
+          "min": 0.007431640625,
+          "max": 0.047802734375,
+          "median": 0.008909505208333333
+        }
+      },
+      "far": {
+        "near": {
+          "count": 280,
+          "min": 0.06378255208333333,
+          "max": 0.21210611979166666,
+          "median": 0.15473470052083332
+        },
+        "far": {
+          "count": 210,
+          "min": 0.028326822916666668,
+          "max": 0.078037109375,
+          "median": 0.039850260416666665
+        }
+      },
+      "combined": {
+        "near": {
+          "count": 280,
+          "min": 0.2183203125,
+          "max": 0.3338671875,
+          "median": 0.2475048828125
+        },
+        "far": {
+          "count": 210,
+          "min": 0.028326822916666668,
+          "max": 0.078037109375,
+          "median": 0.039850260416666665
+        }
+      }
+    },
+    "truth_source": "original contact-sheet labels only group results; all originals contribute independent of dominant channel",
+    "normalization": "UTF-8 JSON, sorted object keys, compact separators, ensure_ascii=false, no trailing newline",
+    "original_measurements_normalized_sha256": "3bb2aa781e3a1eb6157b9321f915ed6396e6a72c308ad1e2f2c315d7e73a7aef",
+    "limitations": "calibration/grouped acceptance; lighting stress is reused engineering acceptance; no independent unseen corpus or vehicle validation",
+    "original_measurements_source_bytes_sha256": "314b159cc2aadb1ba3fc9385299124a3726d1ffc45405dd609f8c93dd8a32279",
+    "baseline_profile_source_bytes_sha256": "ac6f416047a1a6ca0ee3c7f99809dc574a5538c88118429df09cc9c9d2d20aa5",
+    "baseline_profile_normalized_sha256": "3f08fa3ca60f81910420633ba3a3e7c46790eb359cf92da64cf93691a2d91557",
+    "baseline_profile_source": "stage2_distance_profiles.json",
+    "source_inventory": {
+      "image_count": 490,
+      "modes": {
+        "near": {
+          "actual_files": 280,
+          "missing_photos": 120,
+          "missing": [
+            {
+              "group": "20261012-223603-8e93f875",
+              "written": 10,
+              "paths": [
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223603-8e93f875/01.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223603-8e93f875/02.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223603-8e93f875/03.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223603-8e93f875/04.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223603-8e93f875/05.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223603-8e93f875/06.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223603-8e93f875/07.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223603-8e93f875/08.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223603-8e93f875/09.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223603-8e93f875/10.jpg"
+              ]
+            },
+            {
+              "group": "20261012-223606-c56e84b5",
+              "written": 10,
+              "paths": [
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223606-c56e84b5/01.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223606-c56e84b5/02.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223606-c56e84b5/03.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223606-c56e84b5/04.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223606-c56e84b5/05.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223606-c56e84b5/06.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223606-c56e84b5/07.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223606-c56e84b5/08.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223606-c56e84b5/09.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223606-c56e84b5/10.jpg"
+              ]
+            },
+            {
+              "group": "20261012-223609-49838b73",
+              "written": 10,
+              "paths": [
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223609-49838b73/01.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223609-49838b73/02.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223609-49838b73/03.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223609-49838b73/04.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223609-49838b73/05.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223609-49838b73/06.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223609-49838b73/07.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223609-49838b73/08.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223609-49838b73/09.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223609-49838b73/10.jpg"
+              ]
+            },
+            {
+              "group": "20261012-223611-f61bfa7f",
+              "written": 10,
+              "paths": [
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223611-f61bfa7f/01.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223611-f61bfa7f/02.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223611-f61bfa7f/03.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223611-f61bfa7f/04.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223611-f61bfa7f/05.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223611-f61bfa7f/06.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223611-f61bfa7f/07.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223611-f61bfa7f/08.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223611-f61bfa7f/09.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223611-f61bfa7f/10.jpg"
+              ]
+            },
+            {
+              "group": "20261012-223613-0289965f",
+              "written": 10,
+              "paths": [
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223613-0289965f/01.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223613-0289965f/02.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223613-0289965f/03.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223613-0289965f/04.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223613-0289965f/05.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223613-0289965f/06.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223613-0289965f/07.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223613-0289965f/08.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223613-0289965f/09.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223613-0289965f/10.jpg"
+              ]
+            },
+            {
+              "group": "20261012-223622-9d14e7e1",
+              "written": 10,
+              "paths": [
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223622-9d14e7e1/01.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223622-9d14e7e1/02.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223622-9d14e7e1/03.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223622-9d14e7e1/04.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223622-9d14e7e1/05.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223622-9d14e7e1/06.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223622-9d14e7e1/07.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223622-9d14e7e1/08.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223622-9d14e7e1/09.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223622-9d14e7e1/10.jpg"
+              ]
+            },
+            {
+              "group": "20261012-223624-bde3c1e6",
+              "written": 10,
+              "paths": [
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223624-bde3c1e6/01.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223624-bde3c1e6/02.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223624-bde3c1e6/03.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223624-bde3c1e6/04.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223624-bde3c1e6/05.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223624-bde3c1e6/06.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223624-bde3c1e6/07.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223624-bde3c1e6/08.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223624-bde3c1e6/09.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223624-bde3c1e6/10.jpg"
+              ]
+            },
+            {
+              "group": "20261012-223627-ba75428c",
+              "written": 10,
+              "paths": [
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223627-ba75428c/01.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223627-ba75428c/02.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223627-ba75428c/03.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223627-ba75428c/04.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223627-ba75428c/05.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223627-ba75428c/06.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223627-ba75428c/07.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223627-ba75428c/08.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223627-ba75428c/09.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223627-ba75428c/10.jpg"
+              ]
+            },
+            {
+              "group": "20261012-223629-5088f1e6",
+              "written": 10,
+              "paths": [
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223629-5088f1e6/01.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223629-5088f1e6/02.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223629-5088f1e6/03.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223629-5088f1e6/04.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223629-5088f1e6/05.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223629-5088f1e6/06.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223629-5088f1e6/07.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223629-5088f1e6/08.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223629-5088f1e6/09.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223629-5088f1e6/10.jpg"
+              ]
+            },
+            {
+              "group": "20261012-223631-ad9a7cad",
+              "written": 10,
+              "paths": [
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223631-ad9a7cad/01.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223631-ad9a7cad/02.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223631-ad9a7cad/03.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223631-ad9a7cad/04.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223631-ad9a7cad/05.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223631-ad9a7cad/06.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223631-ad9a7cad/07.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223631-ad9a7cad/08.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223631-ad9a7cad/09.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223631-ad9a7cad/10.jpg"
+              ]
+            },
+            {
+              "group": "20261012-223633-0e06d1b7",
+              "written": 10,
+              "paths": [
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223633-0e06d1b7/01.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223633-0e06d1b7/02.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223633-0e06d1b7/03.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223633-0e06d1b7/04.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223633-0e06d1b7/05.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223633-0e06d1b7/06.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223633-0e06d1b7/07.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223633-0e06d1b7/08.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223633-0e06d1b7/09.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223633-0e06d1b7/10.jpg"
+              ]
+            },
+            {
+              "group": "20261012-223636-942bf47e",
+              "written": 10,
+              "paths": [
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223636-942bf47e/01.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223636-942bf47e/02.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223636-942bf47e/03.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223636-942bf47e/04.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223636-942bf47e/05.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223636-942bf47e/06.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223636-942bf47e/07.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223636-942bf47e/08.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223636-942bf47e/09.jpg",
+                "/root/car_app/recordings/20261012-223503-abc9966a/photos/20261012-223636-942bf47e/10.jpg"
+              ]
+            }
+          ],
+          "recording_manifest": "manifest.json",
+          "recording_manifest_source_bytes_sha256": "4e5bc1e6f62d683ccde2476b391b0d7dfce232e59447a5f5936d1bb8632736fb",
+          "recording_manifest_normalized_sha256": "a94c36d1a771dc17421c7fac86c966d5702111df67bfe22775bb0572035450aa"
+        },
+        "far": {
+          "actual_files": 210,
+          "missing_photos": 0,
+          "missing": [],
+          "recording_manifest": "manifest.json",
+          "recording_manifest_source_bytes_sha256": "03ef8cee2166991b4b67f965e70ea5a7904f827938bfc889fbd381798d3d8324",
+          "recording_manifest_normalized_sha256": "dce4a81f682209d4f1f1ac324bb41cef2fd2817f2090aa553a10e50852378672"
+        }
+      },
+      "annotation_manifest": "stage2_distance_manifest.json",
+      "annotation_manifest_source_bytes_sha256": "e9e1bc24a4d61f5e53f2df0d813911477141c488b99ec9517a24a2dbbb9ccf2a",
+      "annotation_manifest_normalized_sha256": "841f858ee5eb02631a7f47207ac9528fdaccfef40f705bd1204516f486c83385",
+      "original_inventory_normalized_sha256": "0a9675e464edc36e04ed06edaee8e64bb4eb085f97211641f31ac038c986fe18",
+      "normalization": "UTF-8 JSON, sorted object keys, compact separators, ensure_ascii=false, no trailing newline"
+    },
+    "missing_near_manifest_photos": 120
+  },
+  "lighting": {
+    "neutral_max_saturation": 90,
+    "neutral_min_value": 60,
+    "neutral_max_value": 245,
+    "gain_min": 0.7,
+    "gain_max": 1.4,
+    "brightness_reference_percentile": 90
+  },
+  "hsv": {
+    "blue": [
+      [
+        [
+          94,
+          120,
+          8
+        ],
+        [
+          140,
+          255,
+          255
+        ]
+      ]
+    ],
+    "red": [
+      [
+        [
+          0,
+          70,
+          18
+        ],
+        [
+          11,
+          255,
+          255
+        ]
+      ],
+      [
+        [
+          167,
+          70,
+          18
+        ],
+        [
+          179,
+          255,
+          255
+        ]
+      ]
+    ],
+    "orange": [
+      [
+        [
+          8,
+          80,
+          18
+        ],
+        [
+          42,
+          255,
+          255
+        ]
+      ]
+    ],
+    "brown": [
+      [
+        [
+          3,
+          100,
+          8
+        ],
+        [
+          30,
+          255,
+          255
+        ]
+      ],
+      [
+        [
+          3,
+          20,
+          8
+        ],
+        [
+          30,
+          255,
+          120
+        ]
+      ]
+    ]
+  },
+  "pixel_filters": {
+    "wood_normal_saturation_min": 52,
+    "wood_shadow_saturation_min": 20,
+    "wood_shadow_value_max": 110,
+    "wood_shadow_raw_saturation_min": 45,
+    "print_reference_kernel_px": 31,
+    "print_minimum_brightness_ratio": 0.6,
+    "print_reference_kind": "box_mean",
+    "warm_identity_value_percentile": 90,
+    "warm_identity_orange_min_relative_value": 0.6893766937669377
+  },
+  "profiles": {
+    "near": {
+      "roi": [
+        0.2,
+        0.15,
+        0.8,
+        1
+      ],
+      "area_interval": [
+        0.16045833333333334,
+        0.2907444661458334
+      ]
+    },
+    "far": {
+      "roi": [
+        0.2,
+        0,
+        0.8,
+        0.5
+      ],
+      "area_interval": [
+        0.022964843750000002,
+        0.09214648437499999
+      ]
+    },
+    "combined": {
+      "roi": [
+        0.2,
+        0,
+        0.8,
+        1
+      ],
+      "area_interval": [
+        0.028326822916666668,
+        0.3338671875
+      ]
+    }
+  }
+}

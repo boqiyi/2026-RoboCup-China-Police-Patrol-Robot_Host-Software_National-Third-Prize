@@ -1,0 +1,11 @@
+/car_app/logs/
+/car_app/recordings/
+/car_app/calibration/
+/car_app/.audit/
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+*.log
+*.tmp
